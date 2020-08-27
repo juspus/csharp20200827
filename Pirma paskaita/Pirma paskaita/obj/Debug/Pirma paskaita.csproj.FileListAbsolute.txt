@@ -1,0 +1,7 @@
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\bin\Debug\Pirma paskaita.exe.config
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\bin\Debug\Pirma paskaita.exe
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\bin\Debug\Pirma paskaita.pdb
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\obj\Debug\Pirma paskaita.csprojAssemblyReference.cache
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\obj\Debug\Pirma paskaita.csproj.CoreCompileInputs.cache
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\obj\Debug\Pirma paskaita.exe
+C:\Users\justa\source\repos\Pirma paskaita\Pirma paskaita\obj\Debug\Pirma paskaita.pdb
