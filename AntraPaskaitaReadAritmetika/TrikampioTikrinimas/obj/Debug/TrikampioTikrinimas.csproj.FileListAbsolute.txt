@@ -1,0 +1,6 @@
+C:\csharp20200827\AntraPaskaitaReadAritmetika\TrikampioTikrinimas\bin\Debug\TrikampioTikrinimas.exe.config
+C:\csharp20200827\AntraPaskaitaReadAritmetika\TrikampioTikrinimas\bin\Debug\TrikampioTikrinimas.exe
+C:\csharp20200827\AntraPaskaitaReadAritmetika\TrikampioTikrinimas\bin\Debug\TrikampioTikrinimas.pdb
+C:\csharp20200827\AntraPaskaitaReadAritmetika\TrikampioTikrinimas\obj\Debug\TrikampioTikrinimas.csproj.CoreCompileInputs.cache
+C:\csharp20200827\AntraPaskaitaReadAritmetika\TrikampioTikrinimas\obj\Debug\TrikampioTikrinimas.exe
+C:\csharp20200827\AntraPaskaitaReadAritmetika\TrikampioTikrinimas\obj\Debug\TrikampioTikrinimas.pdb

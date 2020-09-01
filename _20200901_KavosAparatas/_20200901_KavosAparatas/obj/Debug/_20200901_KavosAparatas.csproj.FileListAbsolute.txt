@@ -1,0 +1,6 @@
+C:\csharp20200827\_20200901_KavosAparatas\_20200901_KavosAparatas\bin\Debug\_20200901_KavosAparatas.exe.config
+C:\csharp20200827\_20200901_KavosAparatas\_20200901_KavosAparatas\bin\Debug\_20200901_KavosAparatas.exe
+C:\csharp20200827\_20200901_KavosAparatas\_20200901_KavosAparatas\bin\Debug\_20200901_KavosAparatas.pdb
+C:\csharp20200827\_20200901_KavosAparatas\_20200901_KavosAparatas\obj\Debug\_20200901_KavosAparatas.csproj.CoreCompileInputs.cache
+C:\csharp20200827\_20200901_KavosAparatas\_20200901_KavosAparatas\obj\Debug\_20200901_KavosAparatas.exe
+C:\csharp20200827\_20200901_KavosAparatas\_20200901_KavosAparatas\obj\Debug\_20200901_KavosAparatas.pdb

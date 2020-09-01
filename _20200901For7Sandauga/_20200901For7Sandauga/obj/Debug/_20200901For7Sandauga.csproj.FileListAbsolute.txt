@@ -1,0 +1,6 @@
+C:\csharp20200827\_20200901For7Sandauga\_20200901For7Sandauga\bin\Debug\_20200901For7Sandauga.exe.config
+C:\csharp20200827\_20200901For7Sandauga\_20200901For7Sandauga\bin\Debug\_20200901For7Sandauga.exe
+C:\csharp20200827\_20200901For7Sandauga\_20200901For7Sandauga\bin\Debug\_20200901For7Sandauga.pdb
+C:\csharp20200827\_20200901For7Sandauga\_20200901For7Sandauga\obj\Debug\_20200901For7Sandauga.csproj.CoreCompileInputs.cache
+C:\csharp20200827\_20200901For7Sandauga\_20200901For7Sandauga\obj\Debug\_20200901For7Sandauga.exe
+C:\csharp20200827\_20200901For7Sandauga\_20200901For7Sandauga\obj\Debug\_20200901For7Sandauga.pdb

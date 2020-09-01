@@ -1,0 +1,6 @@
+C:\csharp20200827\_20200901PirminiaiIki1000\_20200901PirminiaiIki1000\bin\Debug\_20200901PirminiaiIki1000.exe.config
+C:\csharp20200827\_20200901PirminiaiIki1000\_20200901PirminiaiIki1000\bin\Debug\_20200901PirminiaiIki1000.exe
+C:\csharp20200827\_20200901PirminiaiIki1000\_20200901PirminiaiIki1000\bin\Debug\_20200901PirminiaiIki1000.pdb
+C:\csharp20200827\_20200901PirminiaiIki1000\_20200901PirminiaiIki1000\obj\Debug\_20200901PirminiaiIki1000.csproj.CoreCompileInputs.cache
+C:\csharp20200827\_20200901PirminiaiIki1000\_20200901PirminiaiIki1000\obj\Debug\_20200901PirminiaiIki1000.exe
+C:\csharp20200827\_20200901PirminiaiIki1000\_20200901PirminiaiIki1000\obj\Debug\_20200901PirminiaiIki1000.pdb

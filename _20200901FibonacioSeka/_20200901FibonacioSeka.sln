@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_20200901FibonacioSeka", "_20200901FibonacioSeka\_20200901FibonacioSeka.csproj", "{C0F9B5F3-5D58-452A-882D-C2A952E0881C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0F9B5F3-5D58-452A-882D-C2A952E0881C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F9B5F3-5D58-452A-882D-C2A952E0881C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F9B5F3-5D58-452A-882D-C2A952E0881C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F9B5F3-5D58-452A-882D-C2A952E0881C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {387DA4E2-5EDD-4317-B093-91CBA2A0A5ED}
+	EndGlobalSection
+EndGlobal

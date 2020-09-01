@@ -1,0 +1,7 @@
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\bin\Debug\AntraPaskaitaAritmetika1.exe.config
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\bin\Debug\AntraPaskaitaAritmetika1.exe
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\bin\Debug\AntraPaskaitaAritmetika1.pdb
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\obj\Debug\AntraPaskaitaAritmetika1.csprojAssemblyReference.cache
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\obj\Debug\AntraPaskaitaAritmetika1.csproj.CoreCompileInputs.cache
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\obj\Debug\AntraPaskaitaAritmetika1.exe
+C:\csharp20200827\AntraPaskaitaReadAritmetika\AntraPaskaitaAritmetika1\obj\Debug\AntraPaskaitaAritmetika1.pdb

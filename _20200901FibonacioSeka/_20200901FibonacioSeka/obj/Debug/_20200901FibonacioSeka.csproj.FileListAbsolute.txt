@@ -1,0 +1,7 @@
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\bin\Debug\_20200901FibonacioSeka.exe.config
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\bin\Debug\_20200901FibonacioSeka.exe
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\bin\Debug\_20200901FibonacioSeka.pdb
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\obj\Debug\_20200901FibonacioSeka.csprojAssemblyReference.cache
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\obj\Debug\_20200901FibonacioSeka.csproj.CoreCompileInputs.cache
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\obj\Debug\_20200901FibonacioSeka.exe
+C:\csharp20200827\_20200901FibonacioSeka\_20200901FibonacioSeka\obj\Debug\_20200901FibonacioSeka.pdb
