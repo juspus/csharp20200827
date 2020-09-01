@@ -1,7 +1,0 @@
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\bin\Debug\_20200901_SwitchPvz1.exe.config
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\bin\Debug\_20200901_SwitchPvz1.exe
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\bin\Debug\_20200901_SwitchPvz1.pdb
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\obj\Debug\_20200901_SwitchPvz1.csprojAssemblyReference.cache
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\obj\Debug\_20200901_SwitchPvz1.csproj.CoreCompileInputs.cache
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\obj\Debug\_20200901_SwitchPvz1.exe
-C:\csharp20200827\_20200901_SwitchPvz1\_20200901_SwitchPvz1\obj\Debug\_20200901_SwitchPvz1.pdb

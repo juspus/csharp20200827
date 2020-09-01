@@ -1,7 +1,0 @@
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\bin\Debug\Ifai.exe.config
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\bin\Debug\Ifai.exe
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\bin\Debug\Ifai.pdb
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\obj\Debug\Ifai.csproj.CoreCompileInputs.cache
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\obj\Debug\Ifai.exe
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\obj\Debug\Ifai.pdb
-C:\csharp20200827\AntraPaskaitaReadAritmetika\Ifai\obj\Debug\Ifai.csprojAssemblyReference.cache

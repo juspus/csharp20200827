@@ -10,15 +10,27 @@ namespace _20200901PirminiaiIki1000
     {
         static void Main(string[] args)
         {
-            int suma = 5;
-            for(int i =2; i< 1000; i++)
+
+            //Per paskaita padariau klaida - reikia tikrinti ar skaiciai nesidalina ir is kitu pirminiu skaiciu ne tik 2 ir 3
+            int suma = 0;
+            for (int i = 2; i < 1000; i++)
             {
-                if(i%2 != 0 && i%3 !=0)
+                bool pirminis = true;
+                for (int j = 2; j < i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        pirminis = false;
+                        break;
+                    }
+                }
+
+                if (pirminis)
                 {
                     suma += i;
                 }
             }
-            Console.WriteLine("Suma: {0}", suma);
+            Console.WriteLine(suma);
             Console.ReadLine();
         }
     }
