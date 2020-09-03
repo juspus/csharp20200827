@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF8CB7DD-C108-4A52-ABF7-D572852591F7}</ProjectGuid>
+    <ProjectGuid>{CE94811E-4641-486D-81E5-EF1843968A34}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20200903</RootNamespace>
-    <AssemblyName>_20200903</AssemblyName>
+    <RootNamespace>_20200903SkaitymasRasymasFailas</RootNamespace>
+    <AssemblyName>_20200903SkaitymasRasymasFailas</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
