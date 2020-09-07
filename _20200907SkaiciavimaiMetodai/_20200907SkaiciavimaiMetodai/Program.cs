@@ -13,10 +13,16 @@ namespace _20200907SkaiciavimaiMetodai
         {
             var a = Convert.ToInt32(Ivedimas("Pirmas skaicius: "));
             var b = Convert.ToInt32(Ivedimas("Antras skaicius: "));
+            //Sudetis(a, b);
             Isvedimas(a, b);
             Console.Read();
         }
-
+        /// <summary>
+        /// Tai yra sudeties metodas, kuris sudeda du skaicius
+        /// </summary>
+        /// <param name="sk1">Paduodamas pirmasis skaicius</param>
+        /// <param name="sk2">Paduodamas antrasis skaicius</param>
+        /// <returns>Yra grazinama ju suma</returns>
         private static int Sudetis(int sk1, int sk2)
         {
             var suma = sk1 + sk2;
