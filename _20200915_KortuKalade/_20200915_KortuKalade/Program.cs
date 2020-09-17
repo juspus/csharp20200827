@@ -22,14 +22,14 @@ namespace _20200915_KortuKalade
             {
                 Verte = "Q";
             }
-            else if(verte == 13)
+            else if(verte == 0)
             {
                 Verte = "K";
             }
             else if (verte == 1)
             {
                 Verte = "A";
-            }
+            }            
             else
             {
                 Verte = verte.ToString();
@@ -57,10 +57,42 @@ namespace _20200915_KortuKalade
     {
         static void Main(string[] args)
         {
-
+            Random rng = new Random();
             List<Korta> kalade = new List<Korta>();
+            string[] zenklai = new string[] { "S", "B", "K", "P" };
 
+            while(kalade.Count() < 52)
+            {
+                var generuojamas = rng.Next(0, 52);
+                int znklonr = generuojamas / 13;
+                
+                int verte = generuojamas % 13;
 
+                Korta naujaKorta = new Korta(zenklai[znklonr], verte);
+
+                if(!ArEgzistuoja(naujaKorta, kalade))
+                {
+                    kalade.Add(naujaKorta);
+                }
+            }
+
+            foreach(Korta k in kalade)
+            {
+                k.Info();
+            }
+            Console.Read();
+        }
+
+        public static bool ArEgzistuoja(Korta korta, List<Korta> kalade)
+        {
+            foreach(var card in kalade)
+            {
+                if(korta.Verte == card.Verte && korta.Zenklas == card.Zenklas)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
