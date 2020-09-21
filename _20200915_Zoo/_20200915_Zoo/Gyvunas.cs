@@ -24,12 +24,14 @@ namespace _20200915_Zoo
             Gimtadienis = gimtadienis;
             SotumoLaikas = sotumoLaikas;
 
+
             _Miega = false;
             _Pamaitintas = false;
 
             Amzius = (int)((DateTime.Now-Gimtadienis).TotalDays/365);
         }
 
+        protected bool Stuburas { get; set; }
         public int Id { get; }
         public string Vardas { get; }
         public string Rusis { get; }

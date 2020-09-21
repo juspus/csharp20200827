@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{09D38CE0-528E-4228-9349-2FC74F820404}</ProjectGuid>
+    <ProjectGuid>{AB3F7354-D310-416A-BE22-A68778FA2571}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20200915_Zoo</RootNamespace>
-    <AssemblyName>_20200915_Zoo</AssemblyName>
+    <RootNamespace>_20200921PaveldejimaiPVz</RootNamespace>
+    <AssemblyName>_20200921PaveldejimaiPVz</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bestuburiai.cs" />
     <Compile Include="Gyvunas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stuburiniai.cs" />
-    <Compile Include="Vabzdys.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
