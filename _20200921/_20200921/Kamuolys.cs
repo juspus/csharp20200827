@@ -9,11 +9,11 @@ namespace _20200921
     public class Kamuolys
     {
         public string Firma { get; }
-        public double Radius { get; private set; }
-        public bool Sproges { get; private set; }
-        private int MetimuSk { get; set; }
+        public double Radius { get; protected set; }
+        public bool Sproges { get; protected set; }
+        protected int MetimuSk { get; set; }
         public Spalva Spalva { get; }
-        private Random rng = new Random();
+        private static Random rng = new Random();
         
         public Kamuolys(string firma, double radius, Spalva spalva)
         {
@@ -31,22 +31,28 @@ namespace _20200921
                 MetimuSk++;
             }
             
-            if(rng.NextDouble()<0.3)
+            if(rng.NextDouble()<0.1)
             {
                 Sprogdinti();
             }
         }
 
-        protected virtual void Sprogdinti()
+        protected void Sprogdinti()
         {
             Sproges = true;
             Radius = 0;
-            Console.WriteLine("Pop");
+            SprogimoGarsas();
         }
 
-        public void Info()
+        protected virtual void SprogimoGarsas()
+        {     
+        }
+
+        public virtual void Info()
         {
-            Console.WriteLine("Radius: {0}", Radius);
+            Console.WriteLine("Firma: {0}", Firma);
+            Console.WriteLine("Radius: {0}, Kamuolys atlaike {1} metimus.", Radius, MetimuSk);
+            Spalva.Info();
         }
     }
 }

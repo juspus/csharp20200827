@@ -14,10 +14,15 @@ namespace _20200921
             Lauko = lauko;
         }
 
-        protected override void Sprogdinti()
-        {
-            base.Sprogdinti();
+        protected override void SprogimoGarsas()
+        {            
             Console.WriteLine("Pokst");
+        }
+
+        public override void Info()
+        {
+            base.Info();
+            Console.WriteLine(Lauko ? "Lauko":"Vidaus");
         }
     }
 }

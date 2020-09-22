@@ -12,6 +12,7 @@ namespace _20200921
         public int G { get; }
         public int B { get; }
         public int A { get; }// 0 - 100
+        public string Pavadinimas { get; }
 
         public Spalva(int red, int green, int blue)
         {
@@ -42,6 +43,14 @@ namespace _20200921
                 Console.WriteLine("Bloga spalva!");
             }
         }
+
+        public Spalva(Random rng)
+        {
+            R = rng.Next(0, 255);
+            G = rng.Next(0, 255);
+            B = rng.Next(0, 255);
+            A = rng.Next(0, 100);
+        }
         public Spalva()
         {
             R = 255;
@@ -52,7 +61,7 @@ namespace _20200921
 
         public void Info()
         {
-            Console.WriteLine("{0}, {1}, {2}, {3}", R,G,B,A);
+            Console.WriteLine("R {0}, G {1}, B {2}, A {3}", R,G,B,A);
         }
 
         public void Info(string text)
