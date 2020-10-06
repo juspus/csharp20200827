@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20201006 EventsMetronomas", "20201006 EventsMetronomas\20201006 EventsMetronomas.csproj", "{C09CF8F8-C449-4753-AC51-DD28D92FFAF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C09CF8F8-C449-4753-AC51-DD28D92FFAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09CF8F8-C449-4753-AC51-DD28D92FFAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09CF8F8-C449-4753-AC51-DD28D92FFAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09CF8F8-C449-4753-AC51-DD28D92FFAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6062E834-0391-4795-89AE-F7FB104CE222}
+	EndGlobalSection
+EndGlobal
