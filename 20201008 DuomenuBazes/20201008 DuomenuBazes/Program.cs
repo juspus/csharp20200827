@@ -17,6 +17,9 @@ namespace _20201008_DuomenuBazes
             Console.WriteLine("--------------------------");
             IrasytiVartotoja("Tomas", "Tomuxxxxx", sql);
             StudentuPasirinkimas(sql);
+            //IstrintiVartotoja(4, sql);
+            Console.WriteLine("---------------------------");
+            StudentuPasirinkimasWhere(5, sql);
             Console.Read();
         }
 
@@ -27,6 +30,22 @@ namespace _20201008_DuomenuBazes
             sql.Open();
             SqlDataReader reader = command.ExecuteReader();
             while(reader.Read())
+            {
+                Console.WriteLine(reader["Id"]);
+                Console.WriteLine(reader.GetString(2));
+                Console.WriteLine(reader["Login_Name"]);
+                Console.WriteLine(reader["Load"]);
+            }
+            sql.Close();
+        }
+        public static void StudentuPasirinkimasWhere(int id, SqlConnection sql)
+        {
+            string query = "SELECT * FROM Users Where Id = @Id";
+            SqlCommand command = new SqlCommand(query, sql);
+            command.Parameters.AddWithValue("@Id", id);
+            sql.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
             {
                 Console.WriteLine(reader["Id"]);
                 Console.WriteLine(reader.GetString(2));
@@ -47,6 +66,22 @@ namespace _20201008_DuomenuBazes
                 int result = command.ExecuteNonQuery();
                 sql.Close();
                 if(result<0)
+                {
+                    throw new InvalidOperationException();
+                }
+
+            }
+        }
+        public static void IstrintiVartotoja(int id, SqlConnection sql)
+        {
+            string query = $"DELETE FROM Users WHERE Id = @id";
+            using (SqlCommand command = new SqlCommand(query, sql))
+            {
+                command.Parameters.AddWithValue("@id", id);
+                sql.Open();
+                int result = command.ExecuteNonQuery();
+                sql.Close();
+                if (result < 0)
                 {
                     throw new InvalidOperationException();
                 }
