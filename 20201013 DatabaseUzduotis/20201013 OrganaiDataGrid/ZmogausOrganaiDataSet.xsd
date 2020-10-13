@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ZmogausOrganaiDataSet" targetNamespace="http://tempuri.org/ZmogausOrganaiDataSet.xsd" xmlns:mstns="http://tempuri.org/ZmogausOrganaiDataSet.xsd" xmlns="http://tempuri.org/ZmogausOrganaiDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ZmogausOrganaiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ZmogausOrganaiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._20201013_OrganaiDataGrid.Properties.Settings.GlobalReference.Default.ZmogausOrganaiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ZmogusTableAdapter" GeneratorDataComponentClassName="ZmogusTableAdapter" Name="Zmogus" UserDataComponentName="ZmogusTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ZmogausOrganaiConnectionString (Settings)" DbObjectName="dbo.Zmogus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Vardas, Pavarde, Amzius, KraujoGrupe, Gyvas, Donoras FROM dbo.Zmogus</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Vardas" DataSetColumn="Vardas" />
+              <Mapping SourceColumn="Pavarde" DataSetColumn="Pavarde" />
+              <Mapping SourceColumn="Amzius" DataSetColumn="Amzius" />
+              <Mapping SourceColumn="KraujoGrupe" DataSetColumn="KraujoGrupe" />
+              <Mapping SourceColumn="Gyvas" DataSetColumn="Gyvas" />
+              <Mapping SourceColumn="Donoras" DataSetColumn="Donoras" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ZmogausOrganaiDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ZmogausOrganaiDataSet" msprop:Generator_UserDSName="ZmogausOrganaiDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Zmogus" msprop:Generator_TableClassName="ZmogusDataTable" msprop:Generator_TableVarName="tableZmogus" msprop:Generator_TablePropName="Zmogus" msprop:Generator_RowDeletingName="ZmogusRowDeleting" msprop:Generator_RowChangingName="ZmogusRowChanging" msprop:Generator_RowEvHandlerName="ZmogusRowChangeEventHandler" msprop:Generator_RowDeletedName="ZmogusRowDeleted" msprop:Generator_UserTableName="Zmogus" msprop:Generator_RowChangedName="ZmogusRowChanged" msprop:Generator_RowEvArgName="ZmogusRowChangeEvent" msprop:Generator_RowClassName="ZmogusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Vardas" msprop:Generator_ColumnVarNameInTable="columnVardas" msprop:Generator_ColumnPropNameInRow="Vardas" msprop:Generator_ColumnPropNameInTable="VardasColumn" msprop:Generator_UserColumnName="Vardas">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pavarde" msprop:Generator_ColumnVarNameInTable="columnPavarde" msprop:Generator_ColumnPropNameInRow="Pavarde" msprop:Generator_ColumnPropNameInTable="PavardeColumn" msprop:Generator_UserColumnName="Pavarde">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amzius" msprop:Generator_ColumnVarNameInTable="columnAmzius" msprop:Generator_ColumnPropNameInRow="Amzius" msprop:Generator_ColumnPropNameInTable="AmziusColumn" msprop:Generator_UserColumnName="Amzius" type="xs:int" />
+              <xs:element name="KraujoGrupe" msprop:Generator_ColumnVarNameInTable="columnKraujoGrupe" msprop:Generator_ColumnPropNameInRow="KraujoGrupe" msprop:Generator_ColumnPropNameInTable="KraujoGrupeColumn" msprop:Generator_UserColumnName="KraujoGrupe">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gyvas" msprop:Generator_ColumnVarNameInTable="columnGyvas" msprop:Generator_ColumnPropNameInRow="Gyvas" msprop:Generator_ColumnPropNameInTable="GyvasColumn" msprop:Generator_UserColumnName="Gyvas" type="xs:boolean" />
+              <xs:element name="Donoras" msprop:Generator_ColumnVarNameInTable="columnDonoras" msprop:Generator_ColumnPropNameInRow="Donoras" msprop:Generator_ColumnPropNameInTable="DonorasColumn" msprop:Generator_UserColumnName="Donoras" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ZmogausOrganai" Class="ZmogausOrganaiConverterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ZmogausOrganai.mdf;Integrated Security=True" SettingsObjectName="_20201013_DatabaseUzduotis.Properties.Settings" SettingsPropertyName="ZmogausOrganaiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Organai" Member="Organais">
+    <Type Name="Organai">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ZmogausId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pavadinimas" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Svoris" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Kaina" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Vidinis" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Skauda" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Susidevėjimas" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="Zmogus_Organai" Member="Zmogus" ThisKey="ZmogausId" OtherKey="Id" Type="Zmogus" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zmogus" Member="Zmogus">
+    <Type Name="Zmogus">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Vardas" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Pavarde" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Amzius" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Svoris" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Ugis" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="KraujoGrupe" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Lytis" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gyvas" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Narkotikai" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Alkoholis" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Donoras" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Zmogus_Organai" Member="Organais" ThisKey="Id" OtherKey="ZmogausId" Type="Organai" />
+    </Type>
+  </Table>
+</Database>

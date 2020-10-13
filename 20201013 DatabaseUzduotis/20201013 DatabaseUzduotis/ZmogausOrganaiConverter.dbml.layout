@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ZmogausOrganaiConverter">
+  <DataContextMoniker Name="/ZmogausOrganaiConverterDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ced36525-1a4d-4d5b-85ca-1e380b7a0090" absoluteBounds="2.25, 2.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ZmogausOrganaiConverterDataContext/Organai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f7190d5-74f0-4bb7-9a82-8cff0bdea5b7" absoluteBounds="2.2649999999999997, 2.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb9f9bb1-6207-4248-ba0f-53b44a853ece" absoluteBounds="5.625, 1.875, 2, 3.1170068359375">
+      <DataClassMoniker Name="/ZmogausOrganaiConverterDataContext/Zmogus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2498f0e0-2f1c-40bb-9a81-5fe1c26280d3" absoluteBounds="5.64, 2.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.625 : 3.67390055338542); (4.25 : 3.67390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ZmogausOrganaiConverterDataContext/Zmogus/Zmogus_Organai" />
+      <nodes>
+        <classShapeMoniker Id="fb9f9bb1-6207-4248-ba0f-53b44a853ece" />
+        <classShapeMoniker Id="ced36525-1a4d-4d5b-85ca-1e380b7a0090" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
