@@ -30,12 +30,12 @@ namespace _20201013_DatabaseUzduotis
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertOrganai(Organai instance);
-    partial void UpdateOrganai(Organai instance);
-    partial void DeleteOrganai(Organai instance);
     partial void InsertZmogus(Zmogus instance);
     partial void UpdateZmogus(Zmogus instance);
     partial void DeleteZmogus(Zmogus instance);
+    partial void InsertOrganai(Organai instance);
+    partial void UpdateOrganai(Organai instance);
+    partial void DeleteOrganai(Organai instance);
     #endregion
 		
 		public ZmogausOrganaiConverterDataContext() : 
@@ -68,14 +68,6 @@ namespace _20201013_DatabaseUzduotis
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Organai> Organais
-		{
-			get
-			{
-				return this.GetTable<Organai>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Zmogus> Zmogus
 		{
 			get
@@ -83,275 +75,12 @@ namespace _20201013_DatabaseUzduotis
 				return this.GetTable<Zmogus>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Organai")]
-	public partial class Organai : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Id;
-		
-		private int _ZmogausId;
-		
-		private string _Pavadinimas;
-		
-		private System.Nullable<float> _Svoris;
-		
-		private System.Nullable<decimal> _Kaina;
-		
-		private System.Nullable<bool> _Vidinis;
-		
-		private System.Nullable<bool> _Skauda;
-		
-		private System.Nullable<float> _Susidevėjimas;
-		
-		private EntityRef<Zmogus> _Zmogus;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnZmogausIdChanging(int value);
-    partial void OnZmogausIdChanged();
-    partial void OnPavadinimasChanging(string value);
-    partial void OnPavadinimasChanged();
-    partial void OnSvorisChanging(System.Nullable<float> value);
-    partial void OnSvorisChanged();
-    partial void OnKainaChanging(System.Nullable<decimal> value);
-    partial void OnKainaChanged();
-    partial void OnVidinisChanging(System.Nullable<bool> value);
-    partial void OnVidinisChanged();
-    partial void OnSkaudaChanging(System.Nullable<bool> value);
-    partial void OnSkaudaChanged();
-    partial void OnSusidevėjimasChanging(System.Nullable<float> value);
-    partial void OnSusidevėjimasChanged();
-    #endregion
-		
-		public Organai()
-		{
-			this._Zmogus = default(EntityRef<Zmogus>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int Id
+		public System.Data.Linq.Table<Organai> Organais
 		{
 			get
 			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ZmogausId", DbType="Int NOT NULL")]
-		public int ZmogausId
-		{
-			get
-			{
-				return this._ZmogausId;
-			}
-			set
-			{
-				if ((this._ZmogausId != value))
-				{
-					if (this._Zmogus.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnZmogausIdChanging(value);
-					this.SendPropertyChanging();
-					this._ZmogausId = value;
-					this.SendPropertyChanged("ZmogausId");
-					this.OnZmogausIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pavadinimas", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
-		public string Pavadinimas
-		{
-			get
-			{
-				return this._Pavadinimas;
-			}
-			set
-			{
-				if ((this._Pavadinimas != value))
-				{
-					this.OnPavadinimasChanging(value);
-					this.SendPropertyChanging();
-					this._Pavadinimas = value;
-					this.SendPropertyChanged("Pavadinimas");
-					this.OnPavadinimasChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Svoris", DbType="Real")]
-		public System.Nullable<float> Svoris
-		{
-			get
-			{
-				return this._Svoris;
-			}
-			set
-			{
-				if ((this._Svoris != value))
-				{
-					this.OnSvorisChanging(value);
-					this.SendPropertyChanging();
-					this._Svoris = value;
-					this.SendPropertyChanged("Svoris");
-					this.OnSvorisChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Kaina", DbType="Money")]
-		public System.Nullable<decimal> Kaina
-		{
-			get
-			{
-				return this._Kaina;
-			}
-			set
-			{
-				if ((this._Kaina != value))
-				{
-					this.OnKainaChanging(value);
-					this.SendPropertyChanging();
-					this._Kaina = value;
-					this.SendPropertyChanged("Kaina");
-					this.OnKainaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Vidinis", DbType="Bit")]
-		public System.Nullable<bool> Vidinis
-		{
-			get
-			{
-				return this._Vidinis;
-			}
-			set
-			{
-				if ((this._Vidinis != value))
-				{
-					this.OnVidinisChanging(value);
-					this.SendPropertyChanging();
-					this._Vidinis = value;
-					this.SendPropertyChanged("Vidinis");
-					this.OnVidinisChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Skauda", DbType="Bit")]
-		public System.Nullable<bool> Skauda
-		{
-			get
-			{
-				return this._Skauda;
-			}
-			set
-			{
-				if ((this._Skauda != value))
-				{
-					this.OnSkaudaChanging(value);
-					this.SendPropertyChanging();
-					this._Skauda = value;
-					this.SendPropertyChanged("Skauda");
-					this.OnSkaudaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Susidevėjimas", DbType="Real")]
-		public System.Nullable<float> Susidevėjimas
-		{
-			get
-			{
-				return this._Susidevėjimas;
-			}
-			set
-			{
-				if ((this._Susidevėjimas != value))
-				{
-					this.OnSusidevėjimasChanging(value);
-					this.SendPropertyChanging();
-					this._Susidevėjimas = value;
-					this.SendPropertyChanged("Susidevėjimas");
-					this.OnSusidevėjimasChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Zmogus_Organai", Storage="_Zmogus", ThisKey="ZmogausId", OtherKey="Id", IsForeignKey=true)]
-		public Zmogus Zmogus
-		{
-			get
-			{
-				return this._Zmogus.Entity;
-			}
-			set
-			{
-				Zmogus previousValue = this._Zmogus.Entity;
-				if (((previousValue != value) 
-							|| (this._Zmogus.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Zmogus.Entity = null;
-						previousValue.Organais.Remove(this);
-					}
-					this._Zmogus.Entity = value;
-					if ((value != null))
-					{
-						value.Organais.Add(this);
-						this._ZmogausId = value.Id;
-					}
-					else
-					{
-						this._ZmogausId = default(int);
-					}
-					this.SendPropertyChanged("Zmogus");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<Organai>();
 			}
 		}
 	}
@@ -707,6 +436,277 @@ namespace _20201013_DatabaseUzduotis
 		{
 			this.SendPropertyChanging();
 			entity.Zmogus = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Organai")]
+	public partial class Organai : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private int _ZmogausId;
+		
+		private string _Pavadinimas;
+		
+		private System.Nullable<float> _Svoris;
+		
+		private System.Nullable<decimal> _Kaina;
+		
+		private System.Nullable<bool> _Vidinis;
+		
+		private System.Nullable<bool> _Skauda;
+		
+		private System.Nullable<float> _Susidevėjimas;
+		
+		private EntityRef<Zmogus> _Zmogus;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnZmogausIdChanging(int value);
+    partial void OnZmogausIdChanged();
+    partial void OnPavadinimasChanging(string value);
+    partial void OnPavadinimasChanged();
+    partial void OnSvorisChanging(System.Nullable<float> value);
+    partial void OnSvorisChanged();
+    partial void OnKainaChanging(System.Nullable<decimal> value);
+    partial void OnKainaChanged();
+    partial void OnVidinisChanging(System.Nullable<bool> value);
+    partial void OnVidinisChanged();
+    partial void OnSkaudaChanging(System.Nullable<bool> value);
+    partial void OnSkaudaChanged();
+    partial void OnSusidevėjimasChanging(System.Nullable<float> value);
+    partial void OnSusidevėjimasChanged();
+    #endregion
+		
+		public Organai()
+		{
+			this._Zmogus = default(EntityRef<Zmogus>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ZmogausId", DbType="Int NOT NULL")]
+		public int ZmogausId
+		{
+			get
+			{
+				return this._ZmogausId;
+			}
+			set
+			{
+				if ((this._ZmogausId != value))
+				{
+					if (this._Zmogus.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnZmogausIdChanging(value);
+					this.SendPropertyChanging();
+					this._ZmogausId = value;
+					this.SendPropertyChanged("ZmogausId");
+					this.OnZmogausIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pavadinimas", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string Pavadinimas
+		{
+			get
+			{
+				return this._Pavadinimas;
+			}
+			set
+			{
+				if ((this._Pavadinimas != value))
+				{
+					this.OnPavadinimasChanging(value);
+					this.SendPropertyChanging();
+					this._Pavadinimas = value;
+					this.SendPropertyChanged("Pavadinimas");
+					this.OnPavadinimasChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Svoris", DbType="Real")]
+		public System.Nullable<float> Svoris
+		{
+			get
+			{
+				return this._Svoris;
+			}
+			set
+			{
+				if ((this._Svoris != value))
+				{
+					this.OnSvorisChanging(value);
+					this.SendPropertyChanging();
+					this._Svoris = value;
+					this.SendPropertyChanged("Svoris");
+					this.OnSvorisChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Kaina", DbType="Money")]
+		public System.Nullable<decimal> Kaina
+		{
+			get
+			{
+				return this._Kaina;
+			}
+			set
+			{
+				if ((this._Kaina != value))
+				{
+					this.OnKainaChanging(value);
+					this.SendPropertyChanging();
+					this._Kaina = value;
+					this.SendPropertyChanged("Kaina");
+					this.OnKainaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Vidinis", DbType="Bit")]
+		public System.Nullable<bool> Vidinis
+		{
+			get
+			{
+				return this._Vidinis;
+			}
+			set
+			{
+				if ((this._Vidinis != value))
+				{
+					this.OnVidinisChanging(value);
+					this.SendPropertyChanging();
+					this._Vidinis = value;
+					this.SendPropertyChanged("Vidinis");
+					this.OnVidinisChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Skauda", DbType="Bit")]
+		public System.Nullable<bool> Skauda
+		{
+			get
+			{
+				return this._Skauda;
+			}
+			set
+			{
+				if ((this._Skauda != value))
+				{
+					this.OnSkaudaChanging(value);
+					this.SendPropertyChanging();
+					this._Skauda = value;
+					this.SendPropertyChanged("Skauda");
+					this.OnSkaudaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Susidevėjimas", DbType="Real")]
+		public System.Nullable<float> Susidevėjimas
+		{
+			get
+			{
+				return this._Susidevėjimas;
+			}
+			set
+			{
+				if ((this._Susidevėjimas != value))
+				{
+					this.OnSusidevėjimasChanging(value);
+					this.SendPropertyChanging();
+					this._Susidevėjimas = value;
+					this.SendPropertyChanged("Susidevėjimas");
+					this.OnSusidevėjimasChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Zmogus_Organai", Storage="_Zmogus", ThisKey="ZmogausId", OtherKey="Id", IsForeignKey=true)]
+		public Zmogus Zmogus
+		{
+			get
+			{
+				return this._Zmogus.Entity;
+			}
+			set
+			{
+				Zmogus previousValue = this._Zmogus.Entity;
+				if (((previousValue != value) 
+							|| (this._Zmogus.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Zmogus.Entity = null;
+						previousValue.Organais.Remove(this);
+					}
+					this._Zmogus.Entity = value;
+					if ((value != null))
+					{
+						value.Organais.Add(this);
+						this._ZmogausId = value.Id;
+					}
+					else
+					{
+						this._ZmogausId = default(int);
+					}
+					this.SendPropertyChanged("Zmogus");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 }

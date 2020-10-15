@@ -8,14 +8,17 @@ namespace _20201013_DatabaseUzduotis
 {
     class Program
     {
-        static ZmogausOrganaiConverterDataContext dataContext;
+        static ZmogausOrganaiConverterDataContext dataContext = new ZmogausOrganaiConverterDataContext();
         static void Main(string[] args)
         {
-            dataContext = new ZmogausOrganaiConverterDataContext();
-
             GeruDonoruAtspaudinimas();
             MireNoAlco();
             Kenciantys();
+            DBIrasuSukurimas irasai = new DBIrasuSukurimas(dataContext);
+            //irasai.ZmogausIrasymasIduomenuBaze();
+            irasai.OrganoIrasymas();
+            irasai.ZmogausElementai(1);
+            ZmogausElementai(1, new Organai());
             Console.ReadLine();
         }
 
@@ -68,6 +71,28 @@ namespace _20201013_DatabaseUzduotis
             {
                 Console.WriteLine($"{i.Id}, {i.Vardas}, {i.Amzius}");
             }
+        }
+
+        public static void Trinimas(Zmogus zm)
+        {
+            dataContext.Zmogus.DeleteOnSubmit(zm);
+            dataContext.SubmitChanges();
+        }
+
+        public static void ZmogausElementai(int id, Organai organas)
+        {
+            organas.Pavadinimas = "test";
+            IEnumerable<Zmogus> zmns =
+                from zmogus in dataContext.Zmogus
+                where zmogus.Id == id
+                select zmogus;
+            Zmogus zm = zmns.Single();
+
+            zm.Organais.Add(organas);
+
+            zm.Vardas = "iiiiiiiiiiiiiiiiiiiii";
+            zm.Pavarde = "oooooooooooooooooooooooo";
+            dataContext.SubmitChanges();
         }
     }
 }
