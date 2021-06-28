@@ -1,0 +1,19 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Pull Image
+      run: docker pull juspus/robocuttestimage:version1
+    - name: Run Image
+      run: docker run -p 1433:1433 -d juspus/robocuttestimage:version1
